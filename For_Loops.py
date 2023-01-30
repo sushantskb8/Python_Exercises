@@ -86,19 +86,28 @@
 #         i+=1
 # print(prod)
 
-# Q Prime or not
-# n = int(input("Enter the number: "))
-# i = 2
-# count = 0
-# if n == 0 or n == 1:
-#     count = 1
-# while(i <= n/2):
-#     if n % i == 0:
-#         count = 1
-#         break
-#     i+=1
-#
-# if count == 0:
-#     print("It is prime number")
-# else:
-#     print("It is not a prime number")
+
+
+# Q Printing the vowels of string
+# vowel = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'}
+# strg = input("Enter the string: ")
+# res = ""
+# for i in strg:
+#     if i in vowel:
+#         res = res + i
+# print(res)
+
+# Q Finding the value of cos series
+n = int(input("Enter the number: "))
+x = int(input("Enter the number: "))
+s = 0
+m = 1
+for i in range(0, n + 1, 2):
+    f = 1
+    j = 1
+    while(j <= i):
+        f = f * i
+        j = j + 1
+    s = s + m * (pow(x, i)//f)
+    m = m * (-1)
+print(s)

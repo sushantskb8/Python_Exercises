@@ -1,48 +1,30 @@
-# vowel = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'}
-# strg = input("Enter the string: ")
-# res = ""
-# for i in strg:
-#     if i in vowel:
-#         res = res + i
-# print(res)
-
-
-# array = []
+# Q Finding the sum of first n natural numbers
+# def sum(n):
+#     if n <= 0:
+#         return 0
+#     else:
+#         return n + sum(n - 1)
 # n = int(input("Enter the number: "))
-# print("Enter the array elements")
-# for i in range(0, n):
-#     print("Enter number at index ", i)
-#     elements = int(input())
-#     array.append(elements)
-# print("The array is: ", array)
-#
-# x = int(input("Enter the year: "))
-# if (x % 4 == 0) and (x % 100 != 0) or (x % 400 == 0):
-#     print("It is  a leap year")
-# else:
-#     print("It is not a leap year")
+# print(sum(n))
 
-# i = 1
-# sum = 0
-# n = 10
-# while(i <= n):
-#     sum = sum + i*i
-#     i+=1
-# print(sum)
+
+
+
+
 
 # x = int(input("Enter the number: "))
 # rev = str(x)
 # print(rev)
 # print(rev[::-1])
 
-n1 = int(input("Enter First number :"))
-n2 = int(input("Enter Second number :"))
-x = n1
-y = n2
-while(n2!=0):
-    t = n2
-    n2 = n1 % n2
-    n1 = t
-gcd = n1
-print(gcd)
 
+
+# Fibonacci series
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+n = int(input("Enter the number: "))
+for i in range(n):
+    print(fib(i), end=' ')
